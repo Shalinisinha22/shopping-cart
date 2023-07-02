@@ -4,12 +4,21 @@
 /node_modules
 /.pnp
 .pnp.js
+# ignores all .md files
+.md
+
+/.firebase
+/.firebaserc
+/.firebase.json
+
 
 # testing
 /coverage
 
 # production
 /build
+/firebase.json
+
 
 # misc
 .DS_Store
