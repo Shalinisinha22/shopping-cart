@@ -35,17 +35,17 @@ const Cartreducer=(state=initialState,action)=>{
                   cart:state.cart.map((product)=>product.id==action.payload.id?{...product,qty:action.payload.qty}:product)
                }  
                
-               
-             case actionTypes.ADD_FAVOURITES:
-
-                const isAlreadyPresent=state.favourites.find((product)=>product.id==action.payload.id?true:false)
-                 return{
+            
+              case actionTypes.ADD_TO_WISHLIST:
+                return{
                     ...state,
-                    favourites:isAlreadyPresent?state.favourites.filter((product)=> product.id!=action.payload.id )
-                                   : [...state.favourites,{...action.payload.item}],
-                             
-                     
-                 } 
+                    wishlist:[...state.wishlist,action.payload]
+                }  
+              case actionTypes.REMOVE_FROM_WISHLIST:
+                return{
+                    ...state,
+                    wishlist:state.wishlist.filter((product)=>product.id!==action.payload)
+                }   
                  
               case actionTypes.SEARCH:
                     return{

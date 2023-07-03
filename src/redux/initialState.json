@@ -1,8 +1,7 @@
 {
     "cart":[],
     "currItem":null,
-    "favourites":[],
-    "product":[],
-    "searchText":""
+    "searchText":"",
+   "wishlist":[]
     
 }

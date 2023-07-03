@@ -7,12 +7,26 @@ import Toolbar from "@mui/material/Toolbar";
 import SearchIcon from "@mui/icons-material/Search";
 import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
-
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./Navbar.css";
 import { connect } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { search } from "../redux/allAction";
+import Checkbox from "@mui/material/Checkbox";
+
+import Badge from "@mui/material/Badge";
+
+import IconButton from "@mui/material/IconButton";
+
+const StyledBadge = styled(Badge)(({ theme }) => ({
+  "& .MuiBadge-badge": {
+    right: -3,
+    top: 13,
+    border: `2px solid ${theme.palette.background.paper}`,
+    padding: "0 4px",
+  },
+}));
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -27,6 +41,12 @@ const Search = styled("div")(({ theme }) => ({
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(3),
     width: "auto",
+  },
+  [theme.breakpoints.only("xs")]: {
+    marginLeft: theme.spacing(2),
+    width: "7.5rem",
+    marginRight: "1rem",
+    marginLeft: "0",
   },
 }));
 
@@ -75,7 +95,7 @@ function Navbar({ cart = [], searchBar, value }) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
-        position="static"
+        position="fixed"
         style={{ backgroundColor: "#f9ca24", color: "#ecf0f1", width: "100%" }}
       >
         <Toolbar>
@@ -94,7 +114,7 @@ function Navbar({ cart = [], searchBar, value }) {
               sx={{
                 display: { xs: "inline", sm: "block" },
                 fontSize: { xs: "0.85rem", sm: "2rem" },
-                marginRight: { xs: "1rem" },
+                marginRight: { xs: "0.8rem" },
               }}
             >
               ShoppingApp
@@ -106,7 +126,7 @@ function Navbar({ cart = [], searchBar, value }) {
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="Search"
               inputProps={{ "aria-label": "search" }}
               value={value}
               onChange={(e) => searchBar(e.target.value)}
@@ -114,16 +134,38 @@ function Navbar({ cart = [], searchBar, value }) {
             />
           </Search>
 
+
+          <div className="navbar-icons">
+
+          <div className="wishlist-icon">
+            <Link
+              to="/wishlist"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              {" "}
+              <FavoriteBorderIcon
+                className="icon"
+                sx={{ fontSize: { xs: "1.5rem", sm: "2rem" }  }}
+              ></FavoriteBorderIcon>{" "}
+            </Link>
+          </div>
+
           <div className="cart">
             <a
               onClick={goToCart}
               style={{ textDecoration: "none", color: "#ecf0f1" }}
             >
-              {" "}
-              <ShoppingCartIcon className="cart-icon"></ShoppingCartIcon>
-              <h5>{cartItem}</h5>{" "}
+              <IconButton aria-label="cart">
+                <StyledBadge badgeContent={cartItem} color="primary">
+                  <ShoppingCartIcon sx={{ color: "white",  fontSize: { xs: "1.5rem", sm: "2rem" } }} />
+                </StyledBadge>
+              </IconButton>
             </a>
           </div>
+
+          </div>
+
+        
         </Toolbar>
       </AppBar>
     </Box>

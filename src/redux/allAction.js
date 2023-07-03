@@ -1,4 +1,4 @@
-import initialState from "./initialState.json";
+
 import * as action from "./action";
 
 export const addToCart=(item,id)=>{
@@ -38,18 +38,20 @@ export const removeItem=(id)=>{
 }
 
 
-export const addFavourites=(id,item)=>{
-   return{
-    type:action.ADD_FAVOURITES,
-    payload:{
-        id:id,
-        item:item
-    }
-   }
-}
+
 export const search=(value)=>{
     return{
      type:action.SEARCH,
      payload:value
     }
  }
+
+ export const addToWishlist = (product) => ({
+    type: action.ADD_TO_WISHLIST,
+    payload: product,
+  });
+  
+  export const removeFromWishlist = (productId) => ({
+    type:action.REMOVE_FROM_WISHLIST,
+    payload: productId,
+  });

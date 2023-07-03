@@ -6,6 +6,7 @@ import SingleItem from './Components/SingleItem';
 import { BrowserRouter,Router, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Cart from './Components/Cart';
+import WishlistPage from './Components/WishlistPage';
 
 function App(props) {
 
@@ -22,6 +23,7 @@ function App(props) {
 
       <Route exact path="/" element={<Product></Product>}></Route>
       <Route exact path="/cart" element={<Cart></Cart>}></Route>
+      <Route exact path="/wishlist" element={<WishlistPage></WishlistPage>}></Route>
       
     </Routes>  
 
