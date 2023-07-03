@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+Hosted on : https://shopping-cart-294ff.web.app
+<p>A shopping cart web application using modern web technologies, where the user can store and view the items they are considering purchasing.</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<h3>Features</h3>
+<ul><li>Add and remove products from the cart</li>
+<li>Filter products by their names</li>
+  <li>Add and remove products from wishlist</li>
+<li>Responsive design</li></ul>
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2>🚀 Technical Stack:</h2>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<ul>
+<li>Programming Language:React, Redux, Material-UI, Axios, Javascript, HTML, CSS, Firebase </li>
+<li>IDE: VScode</li>
+</ul>
 
-### `npm test`
+<h3>Some screenshots</h3>
+<h5>Home</h5>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![shopping](https://github.com/Shalinisinha22/shopping-cart/assets/122859073/018d2864-bee6-47e7-a719-ae633c565a2f)
 
-### `npm run build`
+<h5>View Item </h5>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![ShoppingView](https://github.com/Shalinisinha22/shopping-cart/assets/122859073/73dd428c-85c0-46f6-92ef-e537001c3fb6)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+<h5>Wishlist</h5>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![wishlistpage](https://github.com/Shalinisinha22/shopping-cart/assets/122859073/eb42f303-ccc8-4985-a585-5d67d5fa0c0e)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<h5>Add to cart</h5>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+![cartpage](https://github.com/Shalinisinha22/shopping-cart/assets/122859073/6750c5e6-658b-4ae4-8363-7d3ae92b1e98)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+<h3>Here are my social media handles:<h3>
+
+
+Linkedin:https://www.linkedin.com/in/shalini-sinha-bbb943202/<br>
+
+Email:shalinisinha.cspatna@gmail.com
+
+<h4>Thank you!<h4>
